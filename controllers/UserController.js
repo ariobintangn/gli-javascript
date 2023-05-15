@@ -37,6 +37,30 @@ class UserController {
             next(error);
         }
     }
+
+    static async deleteUser(req, res, next){
+        try{
+            const user = await master_user.findByPk(+req.params.id)
+
+            if(!user){
+                throw("User Not Found!")
+            }
+            await master_user.destroy(
+                {
+                    where: {
+                        id: req.params.id,
+                    },
+                },
+                )
+
+            res.status(200).json({message: `user with id: ${+req.params.id} has been deleted`})
+        }catch(error){
+            console.log("masuk error");
+            console.log(error);
+            next(error)
+        }
+
+    }
 }
 
 module.exports = UserController
