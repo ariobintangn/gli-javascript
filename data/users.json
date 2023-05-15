@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Ario",
+        "jenis_kelamin": "L",
+        "tanggal_lahir": "01/01/1990",
+        "alamat": "jalan kebangsaan",
+        "email": "ario@mail.com",
+        "roleId": 1
+    },
+    {
+        "name": "Hana",
+        "jenis_kelamin": "P",
+        "tanggal_lahir": "01/01/1990",
+        "alamat": "jalan kebangsaan 2",
+        "email": "hana@mail.com",
+        "roleId": 2
+    },
+    {
+        "name": "Nugraha",
+        "jenis_kelamin": "L",
+        "tanggal_lahir": "01/01/1990",
+        "alamat": "jalan kebangsaan 3",
+        "email": "nugraha@mail.com",
+        "roleId": 3
+    }
+]

@@ -1,0 +1,26 @@
+{
+  "name": "gli-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariobintangn/gli-javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ariobintangn/gli-javascript/issues"
+  },
+  "homepage": "https://github.com/ariobintangn/gli-javascript#readme",
+  "dependencies": {
+    "mysql2": "^3.3.1",
+    "pg": "^8.11.0",
+    "sequelize": "^6.31.1",
+    "sequelize-cli": "^6.6.0"
+  }
+}
