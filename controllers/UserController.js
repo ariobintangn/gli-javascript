@@ -1,9 +1,17 @@
-const { master_user } = require("../models");
+const { master_user, master_user_role } = require("../models");
 
 class UserController {
   static async users(req, res, next) {
     try {
-      const users = await master_user.findAll({});
+      const users = await master_user.findAll({
+        include: [
+            {
+                model: master_user_role,
+                
+            },
+        ]
+      });
+      console.log(users);
 
       res.status(200).json(users);
     } catch (error) {
